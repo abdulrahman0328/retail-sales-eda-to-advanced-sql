@@ -8,29 +8,20 @@ The project follows a structured 12-step data analytics roadmap divided into two
 
 ## 🗺️ Analytical Roadmap
 
-```mermaid
-flowchart TD
-    DA[Data Analytics Roadmap] --> EDA[Phase 1: Exploratory Data Analysis]
-    DA --> ADV[Phase 2: Advanced Data Analytics]
-
-    subgraph EDA [Phase 1: Exploratory Data Analysis]
-        E1[1. Database Exploration]
-        E2[2. Dimensions Exploration]
-        E3[3. Date Exploration]
-        E4[4. Measures Exploration]
-        E5[5. Magnitude Analysis]
-        E6[6. Ranking Analysis]
-    end
-
-    subgraph ADV [Phase 2: Advanced Data Analytics]
-        A7[7. Change-Over-Time Trends]
-        A8[8. Cumulative Analysis]
-        A9[9. Performance Analysis]
-        A10[10. Part-to-Whole Analysis]
-        A11[11. Data Segmentation]
-        A12[12. Final Reporting & Views]
-    end
-```
+| Phase | Step # | Analysis Type | Focus & Methodology |
+| :--- | :---: | :--- | :--- |
+| **Phase 1: Exploratory Data Analysis** | **1** | **Database Exploration** | Inspect metadata, tables, schemas, and object architecture. |
+| | **2** | **Dimensions Exploration** | Categorical breakdown, data types, and attribute profiling. |
+| | **3** | **Date Exploration** | Lifespan boundaries (`MIN`/`MAX` dates) & demographic age spans. |
+| | **4** | **Measures Exploration** | Executive KPI summary report using dynamic `UNION ALL`. |
+| | **5** | **Magnitude Analysis** | Metric distribution across product categories, countries & gender. |
+| | **6** | **Ranking Analysis** | Top $N$ / Bottom $N$ performance identification using `RANK()`. |
+| **Phase 2: Advanced Data Analytics** | **7** | **Change-Over-Time** | Historical trends & monthly revenue granularity (`DATETRUNC`). |
+| | **8** | **Cumulative Analysis** | Month-over-Month running totals using CTEs & `SUM() OVER()`. |
+| | **9** | **Performance Analysis** | YoY growth analysis & moving averages (`LAG()` & `AVG() OVER`). |
+| | **10** | **Part-to-Whole Analysis** | Category revenue percentage contributions to total sales. |
+| | **11** | **Data Segmentation** | Customer RFM grouping & product price tiering. |
+| | **12** | **Final Reporting & Views** | Production-ready database views for BI integration. |
 
 ---
 
